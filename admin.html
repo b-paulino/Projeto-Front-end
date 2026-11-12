@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração - Queridinha da Praia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="faixa">Moda feminina inspirada no litoral</div>
+    <header>
+        <a href="index.html">
+            <img src="imagens/logo-horizontal.png" alt="Queridinha da Praia">
+        </a>
+        <input type="checkbox" id="abrir-menu">
+        <label class="hamburguer" for="abrir-menu">☰</label>
+        <nav>
+             <a href="index.html#inicio">Início</a>
+            <a href="index.html#colecoes">Coleções</a>
+            <a href="index.html#roupas">Roupas</a>
+            <a href="index.html#acessorios">Acessórios</a>
+            <a href="sacola.html">Sacola</a>
+            <a href="conta.html">Entrar</a>
+            <a href="index.html#contato">Instagram</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pagina painel-admin">
+            <h1>Administração da loja</h1>
+            <p>Gerenciamento de produtos e estoque.</p>
+            <div class="acoes-admin">
+                <a class="botao" href="#novo-produto">+ Adicionar produto</a>
+            </div>
+            <h2 id="roupas-admin">Roupas</h2>
+            <div class="tabela-admin">
+                <table>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Código</th>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                    </tr>
+                    <tr>
+                        <td><img src="imagens/roupa-14.jpg" alt="Vestido Brisa"></td>
+                        <td>R001</td>
+                        <td>Vestido Brisa</td>
+                        <td>R$ 239,90</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagens/roupa-18.jpg" alt="Vestido Hibisco"></td>
+                        <td>R002</td>
+                        <td>Vestido Hibisco</td>
+                        <td>R$ 249,90</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagens/roupa-15.jpg" alt="Vestido Jardim"></td>
+                        <td>R003</td>
+                        <td>Vestido Jardim</td>
+                        <td>R$ 229,90</td>
+                        <td>6</td>
+                    </tr>
+                </table>
+            </div>
+            <h2 id="acessorios-admin">Acessórios</h2>
+            <div class="tabela-admin">
+                <table>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Código</th>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                    </tr>
+                    <tr>
+                        <td><img src="imagens/acessorio-40.jpg" alt="Brinco Sol Azul"></td>
+                        <td>A001</td>
+                        <td>Brinco Sol Azul</td>
+                        <td>R$ 89,90</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagens/acessorio-01.jpg" alt="Colar Pérolas do Mar"></td>
+                        <td>A002</td>
+                        <td>Colar Pérolas do Mar</td>
+                        <td>R$ 69,90</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagens/acessorio-11.jpg" alt="Brinco Espiral"></td>
+                        <td>A003</td>
+                        <td>Brinco Espiral</td>
+                        <td>R$ 49,90</td>
+                        <td>15</td>
+                    </tr>
+                </table>
+            </div>
+            <h2 id="novo-produto">Adicionar produto</h2>
+            <form class="form-admin">
+
+                <label for="codigo-produto">Código</label>
+                <input type="text" id="codigo-produto" required>
+
+                <label for="nome-produto">Nome do produto</label>
+                <input type="text" id="nome-produto" required>
+
+                <label for="categoria-produto">Categoria</label>
+                <select id="categoria-produto">
+                    <option value="roupas">Roupas</option>
+                    <option value="acessorios">Acessórios</option>
+                </select>
+
+                <label for="preco-produto">Preço (R$)</label>
+                <input type="number" id="preco-produto" min="0" step="0.01" required>
+
+                <label for="quantidade-produto">Quantidade</label>
+                <input type="number" id="quantidade-produto" min="0" required>
+
+                <label for="foto-produto">Foto</label>
+                <input type="file" id="foto-produto" accept="image/*">
+
+                <button class="botao" type="button">Salvar produto</button>
+                <button class="botao limpar" type="reset">Limpar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Queridinha da Praia</p>
+        <p>Moda feminina e acessórios | João Pessoa - PB e Natal - RN</p>
+    </footer>
+
+</body>
+</html>
