@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacola - Queridinha da Praia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="faixa">Moda feminina inspirada no litoral</div>
+    <header>
+        <a href="index.html">
+            <img src="imagens/logo-horizontal.png" alt="Queridinha da Praia">
+        </a>
+        <input type="checkbox" id="abrir-menu">
+        <label class="hamburguer" for="abrir-menu">☰</label>
+        <nav>
+            <a href="index.html#inicio">Início</a>
+            <a href="index.html#colecoes">Coleções</a>
+            <a href="index.html#roupas">Roupas</a>
+            <a href="index.html#acessorios">Acessórios</a>
+            <a href="sacola.html">Sacola</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="index.html#contato">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="pagina">
+            <h1>Minha sacola</h1>
+            <p>Confira os produtos antes de finalizar seu pedido.</p>
+            <div class="item">
+                <img src="imagens/roupa-14.jpg" alt="Vestido Brisa">
+                <div>
+                    <h3>Vestido Brisa</h3>
+                    <p>Tamanho único</p>
+                    <p>Quantidade: 1</p>
+                    <strong>R$ 239,90</strong>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/roupa-15.jpg" alt="Vestido Jardim">
+                <div>
+                    <h3>Vestido Jardim</h3>
+                    <p>Tamanho único</p>
+                    <p>Quantidade: 1</p>
+                    <strong>R$ 229,90</strong>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/roupa-07.jpg" alt="Vestido Vinho">
+                <div>
+                    <h3>Vestido Vinho</h3>
+                    <p>Tamanho único</p>
+                    <p>Quantidade: 1</p>
+                    <strong>R$ 209,90</strong>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/acessorio-40.jpg" alt="Brinco Sol Azul">
+                <div>
+                    <h3>Brinco Sol Azul</h3>
+                    <p>1 par</p>
+                    <p>Quantidade: 1</p>
+                    <strong>R$ 89,90</strong>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/acessorio-01.jpg" alt="Colar Pérolas do Mar">
+                <div>
+                    <h3>Colar Pérolas do Mar</h3>
+                    <p>1 unidade</p>
+                    <p>Quantidade: 1</p>
+                    <strong>R$ 69,90</strong>
+                </div>
+            </div>
+            <div class="resumo">
+                <h2>Resumo do pedido</h2>
+                <p>5 produtos (1 unidade cada)</p>
+                <p><strong>Subtotal: R$ 839,50</strong></p>
+                <p>Frete: a combinar</p>
+                <p><strong>Total dos produtos: R$ 839,50</strong></p>
+            </div>
+            <h2>Pagamento e entrega</h2>
+            <form action="resultado.html">
+                <label for="pagamento">Forma de pagamento</label>
+                <select id="pagamento" required>
+                    <option value="">Selecione uma opção</option>
+                    <option>Pix</option>
+                    <option>Cartão de crédito</option>
+                    <option>Cartão de débito</option>
+                </select>
+                <label for="destinatario">Nome de quem vai receber</label>
+                <input id="destinatario" type="text" required>
+                <label for="endereco">Rua e número</label>
+                <input id="endereco" type="text" required>
+                <label for="bairro">Bairro</label>
+                <input id="bairro" type="text" required>
+                <label for="cidade">Cidade e estado</label>
+                <input id="cidade" type="text" required>
+                <label for="cep">CEP</label>
+                <input id="cep" type="text" placeholder="00000-000" required>
+                <button class="botao" type="submit">Finalizar pedido</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>Queridinha da Praia</p>
+        <p>João Pessoa - PB e Natal - RN</p>
+
+    </footer>
+</body>
+</html>
